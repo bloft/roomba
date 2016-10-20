@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/bjarne/ownCloud/Documents/code/kicad/roomba/roomba.sch</source>
+    <date>Mon 26 Sep 2016 10:07:45 PM CEST</date>
+    <tool>Eeschema 4.0.4+e1-6308~48~ubuntu16.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>roomba.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>ESP-12</value>
+      <footprint>ESP8266:ESP-12</footprint>
+      <libsource lib="ESP8266" part="ESP-12"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E8BB71</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>360_DC-DC</value>
+      <footprint>360_dc-dc:360_dc-dc</footprint>
+      <libsource lib="360_dc-dc" part="360_DC-DC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E8ECC3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="360_dc-dc" part="360_DC-DC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">360_DC-DC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+        <pin num="4" name="GND" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="ESP-12">
+      <aliases>
+        <alias>ESP-07v2</alias>
+      </aliases>
+      <description>ESP8266 ESP-12 module, 16 pins, 2mm, PCB antenna</description>
+      <docs>http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/</docs>
+      <footprints>
+        <fp>ESP-07*</fp>
+        <fp>ESP-12*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP-12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="REST" type="input"/>
+        <pin num="2" name="ADC" type="passive"/>
+        <pin num="3" name="CH_PD" type="input"/>
+        <pin num="4" name="GPIO16" type="BiDi"/>
+        <pin num="5" name="GPIO14" type="BiDi"/>
+        <pin num="6" name="GPIO12" type="BiDi"/>
+        <pin num="7" name="GPIO13" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="GPIO15" type="BiDi"/>
+        <pin num="11" name="GPIO2" type="BiDi"/>
+        <pin num="12" name="GPIO0" type="BiDi"/>
+        <pin num="13" name="GPIO4" type="BiDi"/>
+        <pin num="14" name="GPIO5" type="BiDi"/>
+        <pin num="15" name="RXD" type="input"/>
+        <pin num="16" name="TXD" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="360_dc-dc">
+      <uri>/home/bjarne/ownCloud/Documents/code/kicad/libraries/mylib/360_dc-dc.lib</uri>
+    </library>
+    <library logical="ESP8266">
+      <uri>/home/bjarne/ownCloud/Documents/code/kicad/libraries/kicad-ESP8266/ESP8266.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad14)">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad9)">
+      <node ref="U2" pin="4"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad8)">
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="4" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="8" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="9" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="10" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad10)">
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="15" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="16" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+  </nets>
+</export>
